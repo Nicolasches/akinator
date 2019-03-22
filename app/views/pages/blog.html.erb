@@ -1,0 +1,33 @@
+<h1>Mon Blog</h1>
+<h2> Titre </h2>
+<p>voici mon premier blog en rails</p>
+
+
+
+<% article1 = {
+	"title" => "Mon 1er article",
+	"content" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat",
+	"rating" => 3
+}%>
+
+<% article2 = {
+	"title" => "Mon 2ème article",
+	"content" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat",
+	"rating" => 3
+}%>
+
+<% article3 = {
+	"title" => "Mon 3ème article",
+	"content" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat",
+	"rating" => 3
+}%>
+
+
+<% articles = [ article1, article2, article3 ] %>
+<% articles.each do |article| %>
+	 <div class="article">
+		<h2><%= article["title"] %></h2>
+		<p><%= article["content"] %></p>
+	</div>
+<% end %> 
+
