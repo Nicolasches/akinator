@@ -1,6 +1,41 @@
-<h1>Games#edit</h1>
-<p>Find me in app/views/games/edit.html.erb</p>
+<body>
 
-<%= link_to( "Suivant", game_path(1), method: :patch, class: "btn btn-dark" )  %>
 
-<%= link_to( "Résultats", game_path(1), method: :get, class: "btn btn-danger" )  %>
+<div class="boutons">
+	<%= link_to( "Question Suivante", game_path(1), method: :patch, class: "btn btn-dark" )  %>
+	<%= link_to( "Résultats", game_path(1), method: :get, class: "btn btn-danger" )  %>
+	</div>
+
+<div class="SN"> 
+	<a href="https://www.facebook.com/Akinator/"/><img src="https://image.flaticon.com/icons/png/512/33/33702.png" height="40" width="40"></a>
+	<a href="https://www.instagram.com/explore/tags/akinator/?hl=fr"><img src="http://pngimg.com/uploads/instagram/instagram_PNG8.png" height="40" width="40"> </a><br>
+</div>
+
+<div class="texte"> 
+		<h2>Question n°1</h2>
+		<p>Ton personnage a-t-il des petites tresses rousses ? </p>
+	</div>
+
+
+<div class="col-md-9">
+			<img src="https://fr.akinator.com/bundles/elokencesite/images/akitudes_670x1096/defi.png?v95" alt="", class="akt">
+	</div>
+
+<div class="mybtn"> 
+		<button type="button" class="btn btn-primary">Oui</button>
+		<button type="button" class="btn btn-secondary">Non</button>
+	</div>
+
+	<div class="MyButton">
+		<button type="button" class="btn btn-success">Probablement</button>
+		<button type="button" class="btn btn-danger">Probablement pas</button>
+		<button type="button" class="btn btn-warning">Je ne sais pas </button>
+	</div>
+
+<footer>
+
+<p>© 2019 Coding Skills - Audrey RICHARD, Mathilde ROS, Nicolas CHESNAY</p>
+
+</footer>
+
+</body>

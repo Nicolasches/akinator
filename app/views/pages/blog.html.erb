@@ -1,33 +1,54 @@
-<h1>Mon Blog</h1>
-<h2> Titre </h2>
-<p>voici mon premier blog en rails</p>
+<body>
 
 
+<div class="boutons">
+	<%= link_to( "Règles du jeu", pages_blog_path, method: :get, class: "buttons, btn btn-dark" )  %>
 
-<% article1 = {
-	"title" => "Mon 1er article",
-	"content" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat",
-	"rating" => 3
-}%>
+	<%= link_to( "Défie Moi ! ", games_path, method: :post, class: "buttons, btn btn-warning" )  %>
+</div>
 
-<% article2 = {
-	"title" => "Mon 2ème article",
-	"content" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat",
-	"rating" => 3
-}%>
-
-<% article3 = {
-	"title" => "Mon 3ème article",
-	"content" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat",
-	"rating" => 3
-}%>
-
-
-<% articles = [ article1, article2, article3 ] %>
-<% articles.each do |article| %>
-	 <div class="article">
-		<h2><%= article["title"] %></h2>
-		<p><%= article["content"] %></p>
+<div class="col-md-9">
+			<img src="https://fr.akinator.com/bundles/elokencesite/images/akitudes_670x1096/defi.png?v95" alt="", class="akinator">
 	</div>
-<% end %> 
 
+
+<div class="RS"> 
+	<a href="https://www.facebook.com/Akinator/"/><img src="https://image.flaticon.com/icons/png/512/33/33702.png" height="40" width="40"></a>
+	<a href="https://www.instagram.com/explore/tags/akinator/?hl=fr"><img src="http://pngimg.com/uploads/instagram/instagram_PNG8.png" height="40" width="40"></a> <br>
+</div>
+
+</div>
+
+
+<div>
+	<br />
+	<div id="Nos destinations"><h1>3 choses à savoir sur Akinator</h1>
+	<br />
+		<div class="section group">
+			
+			<div class="col span_1_of_3">
+				<h2>Comment y jouer ? </h2>
+				<br />
+				<p>La passion dévorante du génie Akinator est de deviner des personnages en posant des questions. Pour jouer avec lui, pensez à un personnage réel ou fictif, notez-le dans un coin de votre tête. Akinator va alors vous poser une série de questions auxquelles vous devrez répondre le plus honnêtement possible. A l'issue de cette série de questions, il vous dira à qui vous pensiez.</p>
+			</div>
+			
+			<div class="col span_1_of_3">
+				<h2>Quel est le secret d'Akinator</h2>
+				<br />
+				<p>Akinator fonctionne avec le programme Limule édité par Elokence.com. L'algorithme utilisé est une création originale. Il reste notre secret de fabrication.</p>
+			</div>
+			
+			<div class="col span_1_of_3">
+				<h2>Comment ajouter votre question </h2>
+				<br />
+				<p>A la fin d’une partie, lorsqu’Akinator a trouvé le personnage auquel vous pensiez, vous avez la possibilité d’ajouter une question en cliquant sur « Ajouter une question ». Vous devez indiquer un (ou plusieurs) mot(s) clé(s) de votre question. Si Akinator détecte des similarités avec d’autres questions existantes dans sa base de données, Akinator vous proposera une liste de questions.</p>
+			</div>
+		</div>	
+	</div>
+
+<footer>
+
+<p>© 2019 Coding Skills - Audrey RICHARD, Mathilde ROS, Nicolas CHESNAY</p>
+
+</footer>
+</body>

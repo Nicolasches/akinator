@@ -1,19 +1,201 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body
+ {
+ 	height: 100vh;
+ 	background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://www.serilinevoyages.com/site/images/normal/Sejours58e3a1f3d3614.jpg');
+ 	background-size: cover;
+ }
+
+
+h1{
+	font-family: 'Dancing Script', Georgia, Times, serif;
+	font-size: 80px;
+	text-align: center;
+	color: white;
+	margin-top: 120px;
+	margin-left: 50px;
+}
+
+h2
+{
+	font-family: tahoma, Impact, sans-serif;
+	text-align: center;
+	color: white;
+}
+
+p
+{
+	font-family: tahoma, Impact, sans-serif;
+	text-align: center;
+	color: white;
+	margin-left: 50px
+}
+
+/* Home Page */
 
  .avatar {
- 	height: 500px;
+ 	height: 700px;
+
  }
+
+.col-md-6
+{
+	margin-top: -150px;
+	margin-left: 100px;
+}
+
+.container
+{
+	margin-top: -400px;
+	margin-left: 550px;
+}
+
+ 
+.buttons 
+{
+	margin-top: -395px;
+	margin-left: 10px;
+    justify-content: space-between;
+}
+
+.téléchargement
+{
+	margin-bottom: 200px;
+	object-position: center;
+}
+
+.image
+{
+	margin-top: -650px;
+	margin-left: 540px;
+}
+
+.reseaux
+{
+	margin-top: -55px;
+	margin-left: 1350px;
+}
+
+
+footer{
+position:absolute;
+bottom:0;
+text-align: center;
+margin-left: 420px; 
+}
+
+
+/* Page Règles du Jeu */
+.boutons 
+{
+	margin-top: 40px;
+	margin-left: 10px;
+    justify-content: space-between;
+}
+
+.RS
+{
+	margin-top: -130px;
+	margin-left: 1350px;
+}
+
+
+.akinator {
+ 	height: 200px;
+ 	margin-bottom: -60px;
+
+ }
+
+.col-md-9
+{
+	margin-top: -75px;
+	margin-left: 650px;
+}
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.col {
+	display: block;
+	text-align: justify;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; }
+
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+.span_3_of_3 { width: 450px; }
+.span_2_of_3 { width: 450px ; }
+.span_1_of_3 { width: 450px; }
+
+
+/* Page Défi moi */
+.Bout
+{
+	margin-top: 0px;
+	margin-left: 0px;
+    justify-content: space-between;
+}
+
+
+.akt {
+ 	height: 800px;
+
+ }
+
+ .texte
+ {
+ 	margin-top: 100px;
+ 	margin-bottom: -200px;
+ 	margin-left: -450px;
+	
+ }
+
+ .mybtn
+ {
+ 	margin-top: -520px;
+	margin-left: 410px;
+ }
+
+ .MyButton
+ {
+ 	margin-left: 253px;
+ }
+
+ .SN
+{
+	margin-top: -55px;
+	margin-left: 1350px;
+}
+
+
+/* Page Réponse */
+.réponse
+{
+	margin-left: 350px;
+	margin-top: -600px;
+}
+
+.texte
+{
+	margin-left: -530px;
+}
+
+.answ
+{
+	margin-left: 420px;
+	margin-top: 25px;
+}
+
+.Fb
+{
+	margin-left: 1350px;
+	margin-top: -50px;
+}
